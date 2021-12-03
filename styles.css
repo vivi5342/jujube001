@@ -1,6 +1,13 @@
-
+@font-face {
+    font-family: D-DIN;
+    src: url(fonts/D-DIN.otf);
+}
+  
 body {
-	font-size: 0;
+    font-family: D-DIN;
+    font-weight: 700;
+    width: 1260px;
+    margin: auto;
 }
 *,
 *::before,
@@ -8,4 +15,29 @@ body {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+}
+
+.img{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 150px auto 30px;
+}
+
+img{
+    width: 800px;
+}
+
+.text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+.text:before{
+    content: url(img/logo_leftDec.png);
+}
+.text:after{
+    content: url(img/logo_rightDec.png);
 }
